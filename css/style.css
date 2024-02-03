@@ -1,0 +1,767 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+:root {
+    --default-orange: rgba(224, 98, 75);
+    --opacity-black: rgba(45, 55, 64);
+}
+
+.container-topo {
+    position: relative;
+}
+
+.container-topo-background {
+    position: absolute;
+    z-index: -1;
+    background-color: #36454F;
+}
+
+.container-topo-background video {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.cabecalho {
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 10;
+}
+
+#logo-cabecalho {
+    color: black;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.orange-words {
+    color: var(--default-orange);
+}
+
+.navigation-open {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid gray;
+    width: 90%;
+    position: absolute;
+    background-color: white;
+    left: 15px;
+    top: 80px;
+}
+
+.navigation-open a:not(button a) {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+    border-top: 1px solid #36454F30;
+    border-bottom: 1px solid #36454F30;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    color: #36454F;
+    font-weight: 600;
+}
+
+.navigation-open a:hover {
+    background: #36454F10;
+}
+
+.navigation-open button {
+    background-color: var(--default-orange);
+    width: 100%;
+    padding: 15px 0;
+    border: none;
+}
+
+.navigation-open a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navigation button:hover {
+    opacity: 0.8;
+}
+
+#hamburguer {
+    width: 40px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    transform: translateY(240px);
+}
+
+article .span-title {
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+article h1 {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+    font-size: clamp(65px, 6vw, 85px);
+    text-align: center;
+}
+
+article h1 span {
+    color: var(--default-orange);
+}
+
+article button {
+    background-color: var(--default-orange);
+    border: none;
+    padding: 15px;
+}
+
+article button a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+main {
+    margin-top: 430px;
+    padding: 150px 20px;
+}
+
+main div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+main div h2 {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+
+main div h2 span {
+    color: var(--default-orange);
+}
+
+main div p {
+    text-align: center;
+    color: #808080;
+    font-size: 14px;
+    width: clamp(400px,40%,700px);
+    line-height: 25px;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+main section article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main section article div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+main section article div h3 {
+    font-size: 21px;
+}
+
+main section article div p {
+    text-align: start;
+    font-size: 15px;
+    width: clamp(300px,70%, 700px);
+}
+
+.links-section {
+    color: blue;
+    opacity: 0.9;
+    text-transform: capitalize;
+}
+
+main section article div a {
+    text-transform: uppercase;
+    color: var(--default-orange);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#article-background {
+    background-image: url(/images/cta-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#article-background div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px
+}
+
+#article-background div h2 {
+    text-transform: uppercase;
+    font-size: 38px;
+    font-weight: 900;
+    color: white;
+    width: clamp(400px, 100%, 500px);
+    text-align: center;
+}
+
+#article-background div p {
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    width: clamp(400px, 72%, 1400px);
+}
+
+#article-background div button {
+    background: var(--default-orange);
+}
+
+.buttons-boxes-section {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    margin-top: 150px;
+    padding: 160px 20px;
+}
+
+.buttons-boxes-section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px
+}
+
+.buttons-boxes-section-title h2 {
+    text-transform: uppercase;
+    font-size: 1.9rem;
+}
+
+.buttons-boxes-section-title p {
+    text-align: center;
+    font-size: 15px;
+    color: #36454F97;
+    width: clamp(400px, 35vw, 700px);
+    line-height: 25px;
+}
+
+.buttons-boxes-section-principal{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+.buttons-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.training-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 25px 20px;
+    background: transparent;
+    border: none;
+    box-shadow: 1px 1px 15px 1px #36454F50;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.training-button:hover {
+    color: var(--default-orange);
+}
+
+.training-button span {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#schedule-button {
+    background: var(--default-orange);
+    padding: 25px 0;
+    border-radius: 5px;
+    border: 0;
+}
+
+#schedule-button a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.boxes-section {
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.training-section-principal {
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+
+.training-section-principal img{
+    width: clamp(440px,100%,700px);
+    height: auto;
+    border-radius: 5px;
+}
+
+.training-section-principal h4{
+    font-size: 1.5rem;
+}
+
+.training-section-principal p{
+    width: clamp(400px,100%,800px);
+    font-size: 0.94rem;
+    color: #36454F98;
+    line-height: 25px;
+}
+
+.training-section-principal button{
+    background: var(--default-orange);
+    margin-right: auto;
+    padding: 15px;
+    border: none;
+}
+
+.training-section-principal button:hover{
+    opacity: .8;
+}
+
+.training-section-principal button a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.training-section-secondary {
+    display: none;
+    flex-direction: column;
+    gap:15px;
+}
+
+.training-section-secondary img{
+    width: clamp(440px,100%,700px);
+    height: auto;
+    border-radius: 5px;
+}
+
+.training-section-secondary h4{
+    font-size: 1.5rem;
+}
+
+.training-section-secondary p{
+    width: clamp(400px,100%,800px);
+    font-size: 0.94rem;
+    color: #36454F98;
+    line-height: 25px;
+}
+
+.training-section-secondary button{
+    background: var(--default-orange);
+    margin-right: auto;
+    padding: 15px;
+    border: none;
+}
+
+.training-section-secondary button:hover{
+    opacity: .8;
+}
+
+.training-section-secondary button a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+#schedule-bg{
+    background-image: url(/images/schedule-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 900px;
+    padding-top: 90px;
+}
+
+.schedule-section{
+    padding: 20px;
+    display: flex;
+    gap: 90px;
+    flex-direction: column;
+}
+
+.schedule-section div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.schedule-section div h2{
+    color: white;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+}
+
+.schedule-section div p{
+    color: white;
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 25px;
+    width: clamp(25rem,40%, 800px);
+}
+
+#schedule-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: white;
+}
+
+#schedule-buttons button{
+    border: none;
+    cursor: pointer;
+    background: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    transition: .3s ease-in-out;
+}
+
+#schedule-buttons button:hover{
+    color: var(--default-orange);
+}
+
+.schedule-block table{
+    border-collapse: collapse;
+}
+
+.schedule-block table th, td{
+    width: 250px;
+    height: 90px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+}
+
+.trainers-block{
+    display: flex;
+    flex-direction: column;
+    padding: 300px 15px;
+}
+
+.trainers-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.trainers-title h3{
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.trainers-title p{
+    text-align: center;
+    font-size: 0.95rem;
+    width: clamp(370px,89%,800px);
+    line-height: 25px;
+    color: #36454F;
+}
+
+.trainers-block section{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.trainer-cards{
+    border-radius: 7px;
+    box-shadow: 1px 1px 9px 1px #36454F40;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 30px;
+}
+
+.trainer-cards img{
+    width: 100%;
+}
+
+.trainer-cards span{
+    font-size: 0.8rem;
+}
+
+.trainer-cards h5{
+    font-size: 1.2rem;
+}
+
+.trainer-cards p{
+    color: #36454F;
+    text-align: left;
+    font-size: 0.9rem;
+    line-height: 30px;
+    width: clamp(320px,100%,600px)
+}
+
+.trainer-cards div{
+    display: flex;
+    gap: 20px;
+}
+
+.trainer-cards div i{
+    color: #36454F;
+}
+
+.map-form-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#map{
+    width: clamp(400px,100%, 700px);
+    height: 600px;
+}
+
+.map-form-section #form-section{
+    background-image: url(/images/contact-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: clamp(400px,100%, 700px);
+}
+
+#form-section form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 45px;
+    gap: 30px;
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#form-section form input{
+    padding: 10px;
+    width: 100%;
+}
+
+#form-section form input::placeholder, textarea{
+    font-size: 0.9rem;
+}
+
+textarea{
+    padding: 10px;
+}
+
+#form-section form textarea{
+    width: 100%;
+    height: 150px;
+}
+
+
+#form-section form input:nth-child(5){
+    background: var(--default-orange);
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    width: auto;
+    margin-right: auto;
+}
+
+input:focus{
+    outline: none;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+@media screen and (min-width:768px){
+    .cabecalho{
+        position: static;
+        background: #ffffff20;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 0 30px;
+    }
+
+    #logo-cabecalho{
+        color: white;
+    }
+
+    .navigation-open{
+        display: flex;
+        flex-direction: row;
+        background: transparent;
+        border: none;
+        left: 40px;
+        border: none;
+        padding: 20px 0;
+    }
+
+    .navigation-open a:not(button a){
+        color: white;
+        border: none;
+    }
+
+    .navigation-open a:not(button a):hover{
+        color: var(--default-orange);
+        background: none;
+    }
+
+    #hamburguer{
+        display: none;
+    }
+
+    main section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .cabecalho{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 150px;
+    }
+
+    #logo-cabecalho{
+    width: 100%;
+    }
+
+    .navigation-open{
+        position: static;
+        display: flex;
+        align-items: center;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        padding: 150px;
+    }
+
+    main section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .buttons-boxes-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .buttons-section{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+    }
+
+    .buttons-boxes-section-principal{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 60px;
+    }
+
+    .boxes-section{
+        width: 90%;
+    }
+
+    .training-section-principal img{
+        width: 100%;
+    }
+
+    .training-section-secondary img{
+        width: 100%; 
+    }
+
+    .training-section-principal p{
+        width: clamp(300px,100%,700px);
+    }
+
+    .training-section-secondary p{
+        width: clamp(300px,100%,700px);
+    }
+    
+    .trainers-block section{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .map-form-section{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #map{
+        height: 555px;
+    }
+}
